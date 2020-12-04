@@ -1,132 +1,113 @@
 % LaTeX resume using res.cls
-\documentclass[11pt]{res}
-%\addtolength{\textheight}{25pt}
+%\documentclass[11pt]{res}
+\documentclass[12pt]{article}
 \usepackage{geometry}
 \usepackage{pslatex}
-%\usepackage{bookman}
-%\usepackage{lmodern}
-\geometry{tmargin=.6in,lmargin=1in,rmargin=1in,bmargin=.5in,letterpaper}
+\usepackage{natbib}
+\author{Michael Crumrine}
+\usepackage{bibentry}
+\geometry{tmargin=1in,lmargin=1in,rmargin=1in,bmargin=1in,letterpaper}
+\usepackage{url}
+
 \begin{document} 
-\hoffset=20pt
+\nobibliography{pubs.bib}
+\bibliographystyle{plain}
+\nocite{*}
+\pagenumbering{gobble}
+%\hoffset=20pt
 
+\begin{center}
+	\textbf{Michael Crumrine}\\
+	crumrine@umn.edu\\
+	(612) 625 - 1802
+\end{center}
 
-\thispagestyle{empty} % this page does not have a header
+\hrulefill
 
-\name{Michael Crumrine}
-\address{\,\,\,\,\,\, 310 8th St SE \# 103 St\\
-\,\,\,\,\,\,\, Minneapolis, MN 55414\\
-\,\,\,\,\,\,\,\,(414) 213 - 5928\\
-\,\,\,\,\,\,\,\,\,crumrinems@gmail.com\\}
-
-
-\begin{resume}
-
-
-\line(1,0){380}
-
-
-\section{EDUCATION}
-\vspace{0.05in} 
- 
-	{\bf Ph.D. Physics: Experimental Cosmology} - In Progress  \\
-	{\it University of Minnesota}, Minneapolis, MN
-	\begin{itemize}
-	\item{Thesis adviser: Dr. Clem Pryke}
-	\end{itemize}
- 
-    {\bf B.Sc Physics and Mathematics} - May 2013 \\
-    {\it Beloit College}, Beloit, WI
-    \begin{itemize}
-    \setlength\itemsep{.05em}
-    \item{Degree awarded Magna Cum Laude}
-    \item{Departmental Honors in Physics}
-    \item{Chapin presidential scholarship}
-    \item{James R. Ferwerda endowed science scholarship}
-    \item{Thompson Observatory prize in astronomy and astrophysics}
-    \end{itemize}
-   
-\section{RESEARCH EXPERIENCE} 
+\section*{\Large{\underline{\textsc{Education}}}}
 \vspace{0.05in} 
 
-{\bf Graduate Student at University of Minnesota} with the Bicep/Keck program measuring the polarization of the cosmic microwave background in search of evidence for cosmic Inflation.
+	{\bf Ph.D Physics: Experimental Cosmology} - In Progress  \\
+	\indent{\it University of Minnesota}, Minneapolis, MN
+	\newline
+	{\bf B.Sc: Physics and Mathematics} - May 2013  \\
+	\indent{\it Beloit College}, Beloit, WI
 	\begin{itemize}
-		\item{Designed cryostats for upcoming Bicep Array experiment}
-		\item{Deployed to South Pole Nov. 2016 - Jan 2017}
+			\vspace{-0.3cm}
+		\hoffset=20pt\itemsep-0.4em
+		\item{Magna Cum Laude}
+		\item{Departmental Honors: Physics}
 	\end{itemize}
 
 
-{\bf SULI Intern at Lawrence Berkeley National Lab} developing a new CBED /
-	STEM hybrid imaging mode for the TEAM I transmission electron microscope.
-	(2013)
-
-{\bf Instrument Construction and Alteration} with Dr. Patrick Polley. Constructing and implementing portable power supplies for Hall probe magnetometers and altering the instruments for increased sensitivity. (2012)
-
-{\bf REU at University of South Florida} studying exchange bias in magnetic trilayers and the role of the antiferromagnet bulk structure (2012)
+\section*{\Large{\underline{\textsc{positions/employment}}}}
+\vspace{0.05in} 
+	{\bf Graduate Research Assistant} 2016 - Present  \\
+	\indent{\it University of Minnesota}, Minneapolis, MN\\
 	\begin{itemize}
-	\item Research presented at the Midstates Undergraduate Research Symposium and at the 2013 March meeting of the American Physical Society in Baltimore as one of the undergraduate presentations
-	\end{itemize} \vspace{0pt}
-	
-	{\bf Accelerator Repair } with Dr. Paul Stanley, working on repairing and reconstructing the dehumidification and refrigeration system (2010)\vspace{.05in}
-	
-	
-\section{TEACHING EXPERIENCE}
-	{\bf Graduate Teaching Assistant:}
-	\begin{itemize}
-		\item{PHYS 1301: Introductory Physics for Science and Engineering}
+			\vspace{-0.8cm}
+		\itemsep=-0.4em
+		\item{Designed and oversaw fabrication of cryostats for new Bicep
+			Array experiment}
+		\item{Deployed and commissioned the new Bicep Array telescope at the
+			geographic South Pole}
+		\item{Deployed to the South Pole:}
 			\begin{itemize}
-				\item{Aug. 2014 - Dec. 2014}
-				\item{Aug. 2015 - May 2016}
-			\end{itemize}
-		\item{PHYS 1201: Introductory Physics for Biology and Pre-Medicine}
-			\begin{itemize}
-				\item{Jan. 2015 - May 2015}
-				\item{May 2016 - Aug. 2016}
+				\itemsep=-0.4em
+					\vspace{-0.3cm}
+				\item{Nov. 2016 - Jan 2017}
+				\item{Nov. 2019 - Feb 2020}
 			\end{itemize}
 	\end{itemize}
-
-	{\bf Freelance Tutor}
+	\vspace{-0.1in}
+	{\bf Teaching Assistant} 2014 - 2016  \\
+	\indent{\it University of Minnesota}, Minneapolis, MN \\
+	{\bf SULI Intern} 2013 \\
+	\indent{\it Lawrence Berkeley National Laboratory}, Berkeley, CA
 	\begin{itemize}
-		\item{Differential Equations - University of California, Berkeley: Sept. 2013 - Nov. 2013}
-		\item{First Semester Physics - University of California, Berkeley: Feb. 2014 - May 2014}
-		\item{First Semester Physics - University of Minnesota, Twin Cities:
-			May 2014 - Aug. 2014}
+			\vspace{-0.8em}
+		\item{Developed a new CBED/STEM imaging mode for the TEAM I
+			transmission electron microscope}
+	\end{itemize}
+	\vspace{-0.5em}
+	{\bf Fermilab Seasonal Employee}  2013 \\
+	\indent{\it Fermi National Accelerator Laboratory}, Batavia, IL
+	\begin{itemize}
+			\vspace{-0.8em}
+		\item{Decommissioned the Collider Detector at Fermilab (CDF)}
+	\end{itemize}
+	\vspace{-0.5em}
+	{\bf Scenic Shop Supervisor} 2010 - 2013 \\
+	\indent{\it Beloit College}, Beloit, WI
+	\begin{itemize}
+		\itemsep=-0.4em
+			\vspace{-0.8em}
+		\item{Constructed sets and scenery for performing arts department}
+		\item{Oversaw small groups of employees, taught proper tool use and
+			fabrication techniques}
 	\end{itemize}
 
-\section{OTHER EMPLOYMENT} 
-\vspace{0.05in} 
-    {\bf Fermilab Seasonal Employee} assisting in the decommissioning of the
-	Collider Detector at Fermilab (CDF)\vspace{.05in}\\
-    {\bf Scenic Shop Supervisor} in a wood shop for the Beloit College theatre
-	department (2010 - spring 2013) \vspace{.05in}\\
-    {\bf Scenic Shop Employee} in a wood shop for the Beloit College theatre department (2009-2010)\vspace{.05in}\\
+\section*{\Large{\underline{\textsc{Other Experience}}}}
+\vspace{0.1in}
+	{\bf Programming:} Matlab, Octave, Java, IDL, Mathematica, C++, Origin,
+	\LaTeX, Python, Solidworks, COMSOL\\
 
-	
- 
-\section{PROGRAMMING EXPERIENCE} 
-\vspace{.05in}
-Matlab, Octave, Java, IDL, Mathematica, C++,
-Origin, \LaTeX, Python, Solidworks, COMSOL
-
-
-
-\section{PROFESSIONAL AFFILIATIONS} 
-\vspace{0.05in} 
-    Phi Kappa Psi Fraternity \vspace{.01in}\\ 
-    Mortar Board Senior Honor Society\vspace{.01in} \\
-    Society of Physics Students \vspace{.01in}\\
-   American Physical Society \vspace{.01in}\\
-   Mathematical Association of America
-   
-%\section{REFERENCES}
-%\vspace{.1in}
-	%{\bf Dr. Paul Stanley} - Beloit College \\
-	%(608) 363-2258\\
-	%{\bf Dr. J. Patrick Polley} - Beloit College\\
-	%(608) 363-2276
-	
+\section*{\Large{\underline{\textsc{publications}}}}
+\vspace{0.1in} 
+	\begin{itemize}
+			\vspace{-0.1cm}
+		\itemsep=-0.3em
+		\item{\bibentry{bk11}}
+		\item{\bibentry{bk10}}
+		\item{\bibentry{crumrine_2018}}
+		\item{\bibentry{barkats_2018}}
+		\item{\bibentry{jaehwan_2018}}
+		\item{\bibentry{Hui_2018}}
+		\item{\bibentry{Soliman_2018}}
+	\end{itemize}
 
 
-\end{resume}
+
 \end{document}
 
 
