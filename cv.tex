@@ -1,113 +1,122 @@
 % LaTeX resume using res.cls
 %\documentclass[11pt]{res}
-\documentclass[12pt]{article}
+\documentclass[10pt]{article}
 \usepackage{geometry}
 \usepackage{pslatex}
-\usepackage{natbib}
 \author{Michael Crumrine}
 \usepackage{bibentry}
-\geometry{tmargin=1in,lmargin=1in,rmargin=1in,bmargin=1in,letterpaper}
+\geometry{tmargin=0.25in,lmargin=0.5in,rmargin=0.5in,bmargin=1in,letterpaper}
 \usepackage{url}
-
+\usepackage{enumitem}
+\usepackage{natbib}
+\DeclareUnicodeCharacter{2009}{ }
 \begin{document} 
 \nobibliography{pubs.bib}
-\bibliographystyle{plain}
+\bibliographystyle{plainnat}
 \nocite{*}
 \pagenumbering{gobble}
 %\hoffset=20pt
+\noindent{\textsc{\Huge{Michael Crumrine}}}
 
-\begin{center}
-	\textbf{Michael Crumrine}\\
-	crumrine@umn.edu\\
-	(612) 625 - 1802
-\end{center}
+\noindent(414) 213-5928
 
+\noindent crumrine@umn.edu
+
+\section*{\Large{\textsc{Education}}}
+\vspace*{-1.5em}
 \hrulefill
 
-\section*{\Large{\underline{\textsc{Education}}}}
-\vspace{0.05in} 
-
-	{\bf Ph.D Physics: Experimental Cosmology} - In Progress  \\
-	\indent{\it University of Minnesota}, Minneapolis, MN
-	\newline
-	{\bf B.Sc: Physics and Mathematics} - May 2013  \\
-	\indent{\it Beloit College}, Beloit, WI
-	\begin{itemize}
-			\vspace{-0.3cm}
-		\hoffset=20pt\itemsep-0.4em
-		\item{Magna Cum Laude}
-		\item{Departmental Honors: Physics}
+	\noindent{\bf Ph.D Physics: Experimental Cosmology} \hspace{\fill} {\bf In Progress}
+	
+	\noindent{\it University of Minnesota} - Minneapolis, MN \hspace{\fill} {\bf Expected Fall 2021}\\
+	\noindent School of Physics and Astronomy 
+	\vspace{0.125in}
+	
+	\noindent{\bf B.Sc: Physics and Mathematics} \hspace{\fill} {\bf May 2013}  \\
+	\noindent{\it Beloit College} - Beloit, WI
+	
+	\begin{itemize}[noitemsep,topsep=0pt]
+%		\hoffset=20pt\itemsep-0.4em
+		\item{Graduated \textit{Magna Cum Laude} with departmental honors in Physics}
 	\end{itemize}
 
 
-\section*{\Large{\underline{\textsc{positions/employment}}}}
-\vspace{0.05in} 
-	{\bf Graduate Research Assistant} 2016 - Present  \\
-	\indent{\it University of Minnesota}, Minneapolis, MN\\
-	\begin{itemize}
-			\vspace{-0.8cm}
-		\itemsep=-0.4em
-		\item{Designed and oversaw fabrication of cryostats for new Bicep
-			Array experiment}
-		\item{Deployed and commissioned the new Bicep Array telescope at the
-			geographic South Pole}
+\section*{\Large{\textsc{Work Experience}}}
+\vspace*{-1.5em}
+\hrulefill
+
+	\noindent {\bf Graduate Research Assistant} \hspace{\fill} {\bf 2016 - Present}  \\
+	\noindent{\it University of Minnesota} - Minneapolis, MN
+	
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item{Lead the thermal and mechanical design of a new cryogenic receiver for the Bicep Array experiment including extensive CAD modelling in Solidworks and multiphysics simulation in Comsol.}
+		\item{Managed hardware requirements and interfaces between collaborating groups across six institutions. Oversaw manufacturing, integration, testing, and first operations of these new receivers.}
+		\item{Deployed to the South Pole for maintenance, re-assembly, and calibration of the Keck and Bicep3 telescopes. Commissioned the new Bicep Array telescope at the geographic South Pole over an intensive 14 week summer season.}
+		\item{Responsible for quality analysis of incoming data and investigation of anomalous features to diagnose and solve root-cause problems during operation.}
+		\item{Lead analysis of the first year of raw data from the new Bicep Array experiment to produce stricter constraints on polarized galactic synchrotron emission. }
+		\item{Prepared and presented technical reports at weekly meetings with 30 + collaborators across six institutions.}
+		\item{Mentored incoming graduate students and undergraduate students in experimental procedures and techniques.}		
 		\item{Deployed to the South Pole:}
-			\begin{itemize}
-				\itemsep=-0.4em
-					\vspace{-0.3cm}
+		
+			\begin{itemize}[noitemsep,topsep=0pt]
 				\item{Nov. 2016 - Jan 2017}
 				\item{Nov. 2019 - Feb 2020}
 			\end{itemize}
 	\end{itemize}
-	\vspace{-0.1in}
-	{\bf Teaching Assistant} 2014 - 2016  \\
-	\indent{\it University of Minnesota}, Minneapolis, MN \\
-	{\bf SULI Intern} 2013 \\
-	\indent{\it Lawrence Berkeley National Laboratory}, Berkeley, CA
-	\begin{itemize}
-			\vspace{-0.8em}
-		\item{Developed a new CBED/STEM imaging mode for the TEAM I
-			transmission electron microscope}
+	
+	\noindent{\bf Teaching Assistant} \hspace{\fill} {\bf 2014 - 2016}  \\
+	\noindent{\it University of Minnesota} - Minneapolis, MN
+	
+	\begin{itemize}[noitemsep,topsep=0pt]
+	\item{Courses: Introduction to Physics for Science and Engineering (2 semesters) and Biology and Pre-Medicine (3 semesters)}
 	\end{itemize}
-	\vspace{-0.5em}
-	{\bf Fermilab Seasonal Employee}  2013 \\
-	\indent{\it Fermi National Accelerator Laboratory}, Batavia, IL
-	\begin{itemize}
-			\vspace{-0.8em}
+	
+	\noindent{\bf SULI Intern} \hspace{\fill} {\bf 2013} \\
+	\noindent{\it Lawrence Berkeley National Laboratory} - Berkeley, CA
+	
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item{Developed a new CBED/STEM imaging mode for the TEAM I
+			transmission electron microscope resulting in increased imaging resolution}
+	\end{itemize}
+	
+	\noindent{\bf Fermilab Seasonal Employee} \hspace{\fill} {\bf 2013} \\
+	\noindent{\it Fermi National Accelerator Laboratory} - Batavia, IL
+	
+	\begin{itemize}[noitemsep,topsep=0pt]
 		\item{Decommissioned the Collider Detector at Fermilab (CDF)}
 	\end{itemize}
-	\vspace{-0.5em}
-	{\bf Scenic Shop Supervisor} 2010 - 2013 \\
-	\indent{\it Beloit College}, Beloit, WI
-	\begin{itemize}
-		\itemsep=-0.4em
-			\vspace{-0.8em}
-		\item{Constructed sets and scenery for performing arts department}
-		\item{Oversaw small groups of employees, taught proper tool use and
+	
+	\noindent{\bf Scenic Shop Supervisor} \hspace{\fill} {\bf 2010 - 2013} \\
+	\noindent{\it Beloit College} - Beloit, WI
+	
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item{Constructed sets and scenery to specifications for performing arts department}
+		\item{Oversaw small groups of student employees, taught proper power tool use, safety, and
 			fabrication techniques}
 	\end{itemize}
 
-\section*{\Large{\underline{\textsc{Other Experience}}}}
-\vspace{0.1in}
-	{\bf Programming:} Matlab, Octave, Java, IDL, Mathematica, C++, Origin,
-	\LaTeX, Python, Solidworks, COMSOL\\
+\section*{\Large{\textsc{Skills and Experience}}}
+\vspace*{-1.5em}
+\hrulefill
 
-\section*{\Large{\underline{\textsc{publications}}}}
+\vspace{0.1in}
+\noindent Physics, Experiment, Cosmology, Cryogenics, Computer Aided Design (CAD),  Finite Element Analysis (FEA), Solidworks, \mbox{COMSOL},Data Analysis, Matlab, Octave, Mathematica, C++,
+	\LaTeX, Python, Scientific Computing\\
+\newpage
+\section*{\Large{\textsc{Selected Publications}}}
+\vspace*{-1.5em}
+\hrulefill
+
 \vspace{0.1in} 
-	\begin{itemize}
-			\vspace{-0.1cm}
-		\itemsep=-0.3em
-		\item{\bibentry{bk11}}
-		\item{\bibentry{bk10}}
+	\begin{itemize}[topsep=0pt]
+		%\item{\bibentry{bk11}}
 		\item{\bibentry{crumrine_2018}}
-		\item{\bibentry{barkats_2018}}
+		\item{\bibentry{bk10}}
+		%\item{\bibentry{barkats_2018}}
 		\item{\bibentry{jaehwan_2018}}
 		\item{\bibentry{Hui_2018}}
-		\item{\bibentry{Soliman_2018}}
+		%\item{\bibentry{Soliman_2018}}
 	\end{itemize}
-
-
-
 \end{document}
 
 
